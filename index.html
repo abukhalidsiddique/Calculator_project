@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h1>Calculator</h1>
+<hr>
+<br><br>
+<div class="full">
+  <input type="text" class="display">
+
+  <div class="container">
+
+    <button class="btn" id="btnC" onclick="a=''; document.querySelector('.display').value=a;">C</button>
+    <button class="btn" id="btn1" onclick="a=a + '1' ; document.querySelector('.display').value=a;">1</button>
+    <button class="btn" id="btn2" onclick="a=a + '2' ; document.querySelector('.display').value=a;">2</button>
+    <button class="btn" id="btn+" onclick="a=a + '+' ; document.querySelector('.display').value=a;">+</button>
+    <button class="btn" id="btn3" onclick="a=a + '3' ; document.querySelector('.display').value=a;">3</button>
+    <button class="btn" id="btn4" onclick="a=a + '4' ; document.querySelector('.display').value=a;">4</button>
+    <button class="btn" id="btn-" onclick="a=a + '-' ; document.querySelector('.display').value=a;">-</button>
+    <button class="btn" id="btn5" onclick="a=a + '5' ; document.querySelector('.display').value=a;">5</button>
+    <button class="btn" id="btn6" onclick="a=a + '6' ; document.querySelector('.display').value=a;">6</button>
+    <button class="btn" id="btn*" onclick="a=a + '*' ; document.querySelector('.display').value=a;">*</button>
+    <button class="btn" id="btn7" onclick="a=a + '7' ; document.querySelector('.display').value=a;">7</button>
+    <button class="btn" id="btn8" onclick="a=a + '8' ; document.querySelector('.display').value=a;">8</button>
+    <button class="btn" id="btn/" onclick="a=a + '/' ; document.querySelector('.display').value=a;">/</button>
+    <button class="btn" id="btn=" onclick="let b=eval(a);  a=b; document.querySelector('.display').value=a;">=</button>
+    <button class="btn" id="btn9" onclick="a=a + '9' ; document.querySelector('.display').value=a;">9</button>
+    <button class="btn" id="btn0" onclick="a=a + '0' ; document.querySelector('.display').value=a;">0</button>
+    <button class="btn" id="btn." onclick="a=a + '.' ; document.querySelector('.display').value=a;">.</button>
+  </div>
+</div>
+  <script src="index.js"></script>
+</body>
+</html>
